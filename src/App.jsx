@@ -1,5 +1,5 @@
-import logoCuadrado from './assets/logo_corto.png';
-import logoHorizontal from './assets/logo_largo.png';
+import logoCuadrado from './assets/logo_corto.jpeg';
+import logoHorizontal from './assets/logo_largo.jpeg';
 
 
 
