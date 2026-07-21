@@ -1,3 +1,8 @@
+import logoCuadrado from './assets/logo_corto.png';
+import logoHorizontal from './assets/logo_largo.png';
+
+
+
 import { useState } from "react";
 
 const ROOMS = [
@@ -36,7 +41,7 @@ const TEACHERS = [
 
 function generatePDF(student) {
   const content = `
-FACTURA - ACADEMIA DE IDIOMAS
+FACTURA - FEELING PALENCIA
 ==============================
 
 Alumno: ${student.name}
@@ -69,8 +74,8 @@ export default function AcademyApp() {
       {/* Header */}
       <div style={{ background: "#1E293B", color: "white", padding: "0 24px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 56 }}>
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-          <div style={{ width: 32, height: 32, background: "#3B82F6", borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: 14 }}>A</div>
-          <span style={{ fontWeight: 600, fontSize: 16 }}>Academia de Idiomas</span>
+          <img src={logoCuadrado} alt="Feeling Palencia" style={{ width: 32, height: 32, borderRadius: 8, objectFit: "contain" }} />
+          <span style={{ fontWeight: 600, fontSize: 16 }}>Feeling Palencia</span>
         </div>
         <div style={{ display: "flex", gap: 4 }}>
           {["schedule", "students", "teachers", "rooms"].map(v => (
